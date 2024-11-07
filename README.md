@@ -22,7 +22,7 @@ Tien Gow is a traditional Chinese domino game that is played with a set of 32 ti
 
 For questions or feedback, feel free to reach out to us:
 
-Email: chowantoinette@gmail.com
+Email: hello@skyninesocial.club
 Website: https://skyninesocial.club
 
 Thank you for visiting our repository! We hope you enjoy being part of the Tien Gow community!

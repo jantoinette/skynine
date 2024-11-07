@@ -1,0 +1,326 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--serif: "Cochin", 'Garamond', serif;
+	--sans: "Phudu", 'Futura', sans-serif;
+	--script: "Damion", 'Brush Script MT', cursive;
+	--chinese: "Zansyu", 'KaiTi', 'Noto Serif CJK TC', serif;
+	/* lang="zh-Hant" */
+	--black: #0D0D0D;
+	--turq: #59D8C7;
+	--gold: #FFC700;
+	--pink: #FFACF7;
+}
+
+@font-face {
+  font-family: "Cochin";
+  src: url('fonts/Cochin.ttc') format("ttc");
+}
+
+@font-face {
+ 	font-family: 'Phudu';
+}
+
+@font-face {
+	font-family: 'Damion';
+}
+
+@font-face {
+  font-family: "Zansyu";
+  src: url('ZansyuBeta-Bold.otf') format("otf");
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	font-size: 21px;
+	scroll-behavior: smooth;
+	margin: 0;
+	background: var(--black);
+	font-family: var(--serif);
+}
+
+section {
+	background: white;
+	padding: 30px 60px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background: transparent;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+a:hover {color: red;}
+
+.hidden {display: none;}
+
+.center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+::selection {background: var(--turq);}
+::-moz-selection {background: var(--turq);}
+
+
+/* ----------------- */
+/* ------ NAV ------ */
+/* ----------------- */
+
+#nav {
+	position: relative;
+	height: 80px;
+}
+
+#nav > div {
+	height: 80px;
+}
+
+.menu {
+	position: absolute;
+	display: flex;
+	width: calc(100% - 120px);
+	justify-content: space-between;
+	align-items: center;
+	font-family: var(--sans);
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.menu .right {
+	display: inline-flex;
+	gap: 6vw;
+}
+
+#nav .logo {
+	position: relative;
+	width: 50%;
+}
+
+#nav .logo img {
+	position: absolute;
+	width: 320px;
+}
+
+
+/* ------------------ */
+/* ----- FOOTER ----- */
+/* ------------------ */
+
+#footer {
+	background: var(--black);
+	color: white;
+	height: 24vh;
+	width: calc(100vw - 120px);
+	padding: 40px 60px;
+	font-family: var(--serif);
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+}
+
+.fa {
+	color: white;
+	font-size: 24px;
+}
+
+.socials i {
+	border: solid 2px red;
+	padding: 12px;
+	margin-right: 12px;
+	width: 24px;
+	border-radius: 100%;
+}
+
+.socials i:hover {
+	background: red;
+}
+
+.footer-text {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/* ------------------ */
+/* ------ HOME ------ */
+/* ------------------ */
+
+.hero {
+	height: 100vh;
+}
+
+.hero-text {
+	display: flex;
+	position: relative;
+	height: 75%;
+	justify-content: space-evenly;
+}
+
+.hero-text > div {
+	display: flex;
+	flex-flow: column nowrap;
+	height: 80%;
+	/* background: paleturquoise; /* aqua, aquamarine, paleturquoise, gold */
+}
+
+.t9 {
+	align-self: flex-start;
+}
+
+.wj {
+	align-self: flex-end;
+}
+
+.hero-text img {
+	height: 25%;
+}
+
+.tile {
+	position: fixed;
+	height: 36%;
+}
+
+.tile.left {
+	left: 60px;
+	bottom: 6%;
+}
+
+.tile.right {
+	right: 60px;
+	top: 160px;
+}
+
+
+/* ----------------- */
+/* ----- LEARN ----- */
+/* ----------------- */
+
+.content > div {
+	margin-bottom: 48px;
+}
+
+h2 {
+	font-family: var(--script);
+	font-size: 2rem;
+}
+
+h3 {
+	font-family: var(--sans);
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 18px 0 6px 0;
+}
+
+/*.pattern {
+    background:
+    conic-gradient(at 62.5% 12.5%, #ffffff 25%, #0000 0) calc(28px / -8) calc(28px / 2),
+    conic-gradient(at 62.5% 12.5%, #ffffff 25%, #0000 0) calc(-3 * 28px / 8) calc(28px / 4),
+    conic-gradient(at 87.5% 62.5%, #ffffff 25%, #0000 0) calc(3 * 28px / 8) calc(28px / 4),
+    conic-gradient(at 87.5% 62.5%, #ffffff 25%, #0000 0) calc(28px / -8) 0,
+    conic-gradient(at 25% 12.5%, #ffffff 25%, #0000 0) 0 calc(28px / -4),
+    conic-gradient(at 25% 12.5%, #ffffff 25%, #0000 0) calc(28px / -4) 0,
+    conic-gradient(at 87.5% 87.5%, #ffffff 25%, #0000 0) calc(28px / 8) 0,
+    var(--color);
+  background-size: 28px 28px;
+  height: 28px;
+  padding-bottom: 0 !important;
+  border-top: solid 4px var(--color);
+  margin-bottom: 20px;
+}*/
+
+.pattern {
+    background:
+    conic-gradient(at 62.5% 12.5%, #ffffff 25%, #0000 0) calc(28px / -8) calc(28px / 2),
+    conic-gradient(at 62.5% 12.5%, #ffffff 25%, #0000 0) calc(-3 * 28px / 8) calc(28px / 4),
+    conic-gradient(at 87.5% 62.5%, #ffffff 25%, #0000 0) calc(3 * 28px / 8) calc(28px / 4),
+    conic-gradient(at 87.5% 62.5%, #ffffff 25%, #0000 0) calc(28px / -8) 0,
+    conic-gradient(at 25% 12.5%, #ffffff 25%, #0000 0) 0 calc(28px / -4),
+    conic-gradient(at 25% 12.5%, #ffffff 25%, #0000 0) calc(28px / -4) 0,
+    conic-gradient(at 87.5% 87.5%, #ffffff 25%, #0000 0) calc(28px / 8) 0,
+    var(--color);
+  background-size: 28px 28px;
+  border: solid 4px var(--color);
+  width: calc(100vw - 128px);
+  position: relative;
+  left: -30px;
+  padding: 30px;
+}
+
+.pattern > div {
+	background: white;
+	padding: 24px 12px;
+}
+
+.download i {
+	border-bottom: 3px solid black;
+	padding: 0 2px;
+	margin-right: 6px;
+}
+
+.download a:hover i {
+	border-bottom-color: red;
+}
+
+.download {
+	font-family: var(--sans);
+	font-weight: 500;
+}
+
+.tiles > div{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 12px 0;
+}
+
+.tiles img {
+	width: 50%;
+}
+
+.content ul {
+	list-style-type: disc;
+}
+
+.rules ol {
+	list-style-type: decimal;
+}
+
+.content li {
+	margin-left: 36px;
+	padding: 6px;
+	padding-right: 0;
+}
+
+.resources ul {
+	list-style-type: none;
+}
+
+.resources li {
+  margin-left: 8px;
+}
+
+.resources li:before {
+	content: "☞";
+	padding-right: 7px;
+}
+
+
+
+/* ------------------- */
+/* ----- CONTACT ----- */
+/* ------------------- */
+
+.page img {
+	width: 60px;
+}

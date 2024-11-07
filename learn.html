@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="assets/styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Damion&family=Phudu:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Learn the game</title>
+</head>
+
+<body>
+  <section id="nav" class="learn"></section>
+
+  <section class="content">
+    <div class="pattern" style="--color: var(--turq)">
+    <div class="tiles">
+      <h2>The Tiles</h2>
+      <div>
+        <img src="assets/images/scholar.png">
+        <img src="assets/images/military.png">
+      </div>
+
+      <div class="download">
+        <a href="files/.pdf" download><i class="fa-solid fa-arrow-down"></i>Download</a>
+      </div>
+      <p>There are 2 suits in the game of TienGow: Scholar and Military. They are ranked highest to lowest from left to right.</p>
+      <p>The design of these tiles are based on different dice combinations.</p>
+      <p>In the Scholar suit, there are two identical tiles of each type.</p>
+      <p>In the Military suit, there are two tiles of each 5, 7, 8, 9, and one tile of 3 and 6.</p>
+
+      <br>
+
+      <p>Legal hands of the game include playing single tiles, matching pairs, mixed sets, and the Supreme.</p>
+
+      <h3>Single Tiles</h3>
+      <p>Each tile can be played individually. To beat another tile, the tile must be of the same suit, and in not an equal but a higher ranking.</p>
+
+      <h3>Matching Pairs</h3>
+      <p>Two tiles of the same suit in the same ranking can be played together as a set of two.</p>
+
+      <h3>Mixed Sets</h3>
+      <ul>A set of three or four tiles can be played, in any combintion of:
+        <li>Heavens and Nines</li>
+        <li>Earths and Eights</li>
+        <li>Man and Sevens</li>
+        <li>Harmony and Fives</li>
+      </ul>
+      <p>To beat a set, the hand must be of the exact same combination.<br>For example, if a set of 2 Earths and 1 Eight is played, a set of 2 Heavens and 1 Nine can trumps.
+      <br>Player immediately wins 4 points with a quartet.</p>
+
+      <h3>Supreme</h3>
+      <p>Supreme is one of a kind and is unbeatable. It will always win when played, but can only be played when leading the round.<br>Player immediately wins 2 points from all other players.</p>
+    </div>
+    </div>
+
+    <div class="pattern" style="--color: var(--gold)">
+    <div class="rules">
+      <h2>How to Play</h2>
+
+      <h3>Goal</h3>
+      <p>To play the strongest hand that outscores the other players in the final round.</p>
+
+      <h3>Set up</h3>
+      <ol>
+        <li>The player who rolls the highest number on the dice will be the dealer of the first game.</li>
+        <li>Shuffle the tiles. Arrange them into 8 stacks of 4.</li>
+        <li>Before rolling the dice, the dealer decides how the 8 tiles are to be distributed to each player.</li>
+        <li>Count the rolled number, going counter-clockwise starting from the dealer. The corresponding player will be the first to draw tiles.</li>
+        <li>The dealer decides the playing hand of the round.</li>
+        <li>Going counter-clockwise, the next players can only play the same hand of a higher ranking.</li>
+        <li>If a player has nothing to beat the top tile(s) or chooses not to beat it, they must discard the same number of tiles face-down. In that case, players could discard any tile they wish.</li>
+        <li>The player with the highest hand collects the stack(s), and goes first in the next round.</li>
+        <li>Players who have not won any of the first seven rounds automatically lose the last round regardless of the strength of their final tile.</li>
+        <li>Winner becomes dealer of the next game.</li>
+      </ol>
+
+      <h3>Scoring System</h3>
+      <ul>
+        <li>Par value is 4 stacks. The difference above or below par is the points a player wins or loses to the winner. If a player has won no stacks, they lose 5 points.</li>
+        <li>Points double for dealers. The multiplier increases by 1 for each consecutive game a player stays winner. Applies to both their winnings and losses.</li>
+        <li>Player immediately wins from all players 2 points by playing Supreme, and 4 points with any Quartet.</li>
+        <li>If any Quartet, the Supreme, or Three Chickens (the smallest Military tile) wins the final round, the points are doubled. Note that the immediate wins with Supreme and Quartet still applies.</li>
+        <li>If a player wins all 8 stacks, the points are doubled. The above rule applies, meaning that points could be quardrupled, and more for the dealer.</li>
+        <li>If a player attempts to win with Three Chickens in the final round, but is trumped by Big Head Six by another player, the player of Three Chickens will have to cover the points for the other two players not involved on top of their own. Points will not be multiplied, except for dealer.</li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="pattern" style="--color: var(--pink)">
+    <div class="resources">
+      <h2>Friends and Resources</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/taihang_tin9/" target="_blank">Tai Hang Tin 9 Club @ Hong Kong</a></li>
+        <li><a href="https://www.tin9club.com/" target="_blank">The Tin K9u Club @ Hong Kong</a></li>
+        <li><a href="https://www.geocities.ws/cplai/sky-nine.htm" target="_blank">Geocities page by CP Lai</a></li>
+        <li><a href="http://www.gamecabinet.com/rules/DominoTienGow.html" target="_blank">Game Cabinet – Tien Gow Rules</a></li>
+      </ul>
+    </div>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+
+<script src="assets/styles/templates.js"></script>
+
+</body>
+</html>
