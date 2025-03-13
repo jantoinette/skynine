@@ -22,41 +22,157 @@
     <div class="pattern" style="--color: var(--turq)">
     <div class="tiles">
       <h2>The Tiles</h2>
+
       <div>
-        <img src="assets/images/scholar.png">
-        <img src="assets/images/military.png">
+        <p>There are 2 suits in the game of TienGow: Scholar and Military. They are ranked highest to lowest from left to right.</p>
+        <p>The design of these tiles are based on different dice combinations.</p>
+      </div>
+
+      <h3>Legal Hands</h3>
+      <p>To beat another tile, the tile must be of the same suit, and in not an equal but a higher ranking.</p>
+
+      <div class="hands">
+        <h3 class="single">Single Tiles</h3>
+        <p>Each tile can be played individually.</p>
+
+        <h3 class="pair">Matching Pairs</h3>
+        <p>Two tiles of the same suit in the same ranking can be played together as a set of two.</p>
+
+        <h3 class="mixed">Mixed Sets</h3>
+        <!-- <ul>A set of two, three or four tiles can be played, in any combintion of:
+          <li>Heavens and Nines</li>
+          <li>Earths and Eights</li>
+          <li>Man and Sevens</li>
+          <li>Harmony and Fives</li>
+        </ul> -->
+        <p>To beat a set, the hand must be of the exact same combination (matching number of tiles from each suit).<br>For example — if a set of 2 Humans and 1 Seven is played, a set of 2 Earths and 1 Eight, or a set of 2 Heavens and 1 Nine can be played.
+        <br>Player immediately wins 4 points with a quartet.</p>
+
+        <h3 class="supreme">Supreme</h3>
+        <p>Supreme is one of a kind and is unbeatable. It will always win when played, but can only be played when leading the round.<br>Player immediately wins 2 points from all other players.</p>
+      </div>
+
+      <div class="tiles-details">
+        <div class="suits">
+          <div>
+            <h4>Scholar</h4>
+            <img src="assets/images/tiles/scholar.gif">
+          </div>
+          <div>
+            <h6>Big Four 四大</h6>
+            <div class="tile heaven">
+              <img src="assets/images/tiles/heaven.png">
+              <img src="assets/images/tiles/heaven.png">
+              <p>天 Heaven 6+6</p>
+            </div>
+            <div class="tile earth">
+              <img src="assets/images/tiles/earth.png">
+              <img src="assets/images/tiles/earth.png">
+              <p>地 Earth 1+1</p>
+            </div>
+            <div class="tile human">
+              <img src="assets/images/tiles/man.png">
+              <img src="assets/images/tiles/man.png">
+              <p>人 Human 4+4</p>
+            </div>
+            <div class="tile harmony">
+              <img src="assets/images/tiles/harmony.png">
+              <img src="assets/images/tiles/harmony.png">
+              <p>和 Harmony 3+1</p>
+            </div>
+          </div>
+
+          <div>
+            <h6>Four Elements 四素</h6>
+            <div class="tile plum">
+              <img src="assets/images/tiles/plum.png">
+              <img src="assets/images/tiles/plum.png">
+              <p>梅花 Plum Flower 5+5</p>
+            </div>
+            <div class="tile long">
+              <img src="assets/images/tiles/long.png">
+              <img src="assets/images/tiles/long.png">
+              <p>長三 Long Threes 3+3</p>
+            </div>
+            <div class="tile bench">
+              <img src="assets/images/tiles/bench.png">
+              <img src="assets/images/tiles/bench.png">
+              <p>板凳 Bench 2+2</p>
+            </div>
+            <div class="tile tiger">
+              <img src="assets/images/tiles/tiger.png">
+              <img src="assets/images/tiles/tiger.png">
+              <p>斧頭 Tiger's Head 5+6</p>
+            </div>
+          </div>
+
+          <div>
+            <h6>Misc Three 三雜</h6>
+            <div class="tile ten">
+              <img src="assets/images/tiles/ten.png">
+              <img src="assets/images/tiles/ten.png">
+              <p>紅頭十 Red Head Ten 4+6</p>
+            </div>
+            <div class="tile longleg">
+              <img src="assets/images/tiles/longleg.png">
+              <img src="assets/images/tiles/longleg.png">
+              <p>高腳七 Long Leg Seven 1+6</p>
+            </div>
+            <div class="tile mallet">
+              <img src="assets/images/tiles/mallet.png">
+              <img src="assets/images/tiles/mallet.png">
+              <p>玲瓏六 Red Mallet Six 1+5</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="suits">
+          <div>
+            <h4>Military</h4>
+            <img src="assets/images/tiles/military.gif">
+          </div>
+          <div>
+            <h6></h6>
+            <div class="tile nine">
+              <img src="assets/images/tiles/nine1.png">
+              <img src="assets/images/tiles/nine2.png">
+              <p>九 Nine</p>
+            </div>
+            <div class="tile eight">
+              <img src="assets/images/tiles/eight1.png">
+              <img src="assets/images/tiles/eight2.png">
+              <p>八 Eight</p>
+            </div>
+            <div class="tile seven">
+              <img src="assets/images/tiles/seven1.png">
+              <img src="assets/images/tiles/seven2.png">
+              <p>七 Seven</p>
+            </div>
+            <div class="tile five">
+              <img src="assets/images/tiles/five1.png">
+              <img src="assets/images/tiles/five2.png">
+              <p>五 Five</p>
+            </div>
+          </div>
+          <div>
+            <h6>Supreme 至尊</h6>
+            <div class="tile six">
+              <img src="assets/images/tiles/six.png">
+              <p>大頭六 Big Head Six</p>
+            </div>
+            <div class="tile three">
+              <img src="assets/images/tiles/three.png">
+              <p>三雞 Three Chickens</p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="download">
         <a href="files/.pdf" download><i class="fa-solid fa-arrow-down"></i>Download</a>
       </div>
-      <p>There are 2 suits in the game of TienGow: Scholar and Military. They are ranked highest to lowest from left to right.</p>
-      <p>The design of these tiles are based on different dice combinations.</p>
-      <p>In the Scholar suit, there are two identical tiles of each type.</p>
-      <p>In the Military suit, there are two tiles of each 5, 7, 8, 9, and one tile of 3 and 6.</p>
-
-      <br>
-
-      <p>Legal hands of the game include playing single tiles, matching pairs, mixed sets, and the Supreme.</p>
-
-      <h3>Single Tiles</h3>
-      <p>Each tile can be played individually. To beat another tile, the tile must be of the same suit, and in not an equal but a higher ranking.</p>
-
-      <h3>Matching Pairs</h3>
-      <p>Two tiles of the same suit in the same ranking can be played together as a set of two.</p>
-
-      <h3>Mixed Sets</h3>
-      <ul>A set of three or four tiles can be played, in any combintion of:
-        <li>Heavens and Nines</li>
-        <li>Earths and Eights</li>
-        <li>Man and Sevens</li>
-        <li>Harmony and Fives</li>
-      </ul>
-      <p>To beat a set, the hand must be of the exact same combination.<br>For example, if a set of 2 Earths and 1 Eight is played, a set of 2 Heavens and 1 Nine can trumps.
-      <br>Player immediately wins 4 points with a quartet.</p>
-
-      <h3>Supreme</h3>
-      <p>Supreme is one of a kind and is unbeatable. It will always win when played, but can only be played when leading the round.<br>Player immediately wins 2 points from all other players.</p>
+      
+      
     </div>
     </div>
 
@@ -109,6 +225,107 @@
   <footer id="footer"></footer>
 
 <script src="assets/styles/templates.js"></script>
+<script>
+
+  const legalHands = document.querySelectorAll('.hands > h3');
+  const tiles = document.querySelectorAll('.tile');
+
+  const handRules = {
+    single: null,
+    pair: new Set(['six', 'three']),
+    mixed: new Set(['heaven', 'earth', 'human', 'harmony', 'nine', 'eight', 'seven', 'five']),
+    supreme: new Set(['six', 'three'])
+  };
+
+  const tileRules = {
+    heaven: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['heaven', 'nine']
+    },
+    nine: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['heaven', 'nine']
+    },
+    earth: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['earth', 'eight']
+    },
+    eight: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['earth', 'eight']
+    },
+    human: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['human', 'seven']
+    },
+    seven: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['human', 'seven']
+    },
+    harmony: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['harmony', 'five']
+    },
+    five: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['harmony', 'five']
+    },
+    six: {
+      relatedHands: ['single', 'supreme'],
+      relatedTiles: ['six', 'three']
+    },
+    three: {
+      relatedHands: ['single', 'supreme'],
+      relatedTiles: ['six', 'three']
+    }
+  };
+
+  const showLegalHands = (elements, callback) => {
+    elements.forEach((el) => {
+      el.addEventListener('mouseenter', () => callback(el));
+      el.addEventListener('mouseleave', resetStyles);
+    });
+  };
+
+  showLegalHands(legalHands, (hand) => filterByHand(hand, hand.className));
+  showLegalHands(tiles, (tile) => filterByTile(tile.classList[1]));
+
+  function filterByHand(el, handType) {
+    legalHands.forEach((hand) => {
+      hand.style.opacity = hand === el ? 1 : 0.25;
+    })
+
+    const classes = handRules[handType];
+    if (!classes) return;
+
+    tiles.forEach((tile) => {
+      const hasTileName = Array.from(tile.classList).some(cls => classes.has(cls));
+      tile.style.opacity = handType === 'pair' ? (hasTileName ? 0.25 : 1) : (hasTileName ? 1 : 0.25);
+    });
+  }
+
+  function filterByTile(tileClass) {
+    const rules = tileRules[tileClass] || {
+      relatedHands: ['single', 'pair'],
+      relatedTiles: [tileClass]
+    };
+
+    legalHands.forEach((hand) => {
+      hand.style.opacity = rules.relatedHands.includes(hand.className) ? 1 : 0.25;
+    });
+
+    tiles.forEach((tile) => {
+      tile.style.opacity = rules.relatedTiles.includes(tile.classList[1]) ? 1 : 0.25;
+    });
+  };
+
+  function resetStyles() {
+    legalHands.forEach((hand) => hand.style.opacity = 1);
+    tiles.forEach((tile) => tile.style.opacity = 1);
+  }
+
+
+</script>
 
 </body>
 </html>

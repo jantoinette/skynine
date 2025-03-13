@@ -186,17 +186,17 @@ a:hover {color: red;}
 	height: 25%;
 }
 
-.tile {
+.hero .tile {
 	position: fixed;
 	height: 36%;
 }
 
-.tile.left {
+.hero .tile.left {
 	left: 60px;
 	bottom: 6%;
 }
 
-.tile.right {
+.hero .tile.right {
 	right: 60px;
 	top: 160px;
 }
@@ -277,19 +277,87 @@ h3 {
 	font-weight: 500;
 }
 
-.tiles > div{
-	display: flex;
-	justify-content: space-between;
+.tiles-details {
 	width: 100%;
-	padding: 12px 0;
+	padding: 24px 0;
 }
 
-.tiles img {
-	width: 50%;
+.suits {
+	position: relative;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	width: calc(100% - 300px);
+	margin: 36px 0;
+	padding-left: 300px;
+	padding-right: 12px;
+	display: inline-flex;
+	gap: 48px;
+}
+
+.suits img {
+	max-height: 25vh;
+}
+
+.suits > div:nth-child(1) {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	text-transform: unset;
+	font-family: var(--script);
+}
+
+.suits > div {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 15% 85%;
+	text-transform: uppercase;
+	font-family: var(--sans);
+	font-weight: 600;
+}
+
+.suits > div h6 {
+	text-align: center;
+	grid-column: 1 / span 4;
+	height: 50px;
+}
+
+.suits .tile {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 180px;
+}
+
+.suits .tile p {
+	text-align: center;
+	align-self: flex-end;
+}
+
+.suits .tile img {
+	padding: 0 2px;
 }
 
 .content ul {
 	list-style-type: disc;
+}
+
+.hands {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.hands h3 {
+	margin: 12px 48px;
+	cursor: s-resize;
+	text-align: center;
+}
+
+.hands p {
+	display: none;
 }
 
 .rules ol {
@@ -310,7 +378,7 @@ h3 {
   margin-left: 8px;
 }
 
-.resources li:before {
+.resources li::before {
 	content: "☞";
 	padding-right: 7px;
 }
