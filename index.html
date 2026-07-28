@@ -6,50 +6,101 @@
   <link rel="stylesheet" href="assets/styles/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Damion&family=Phudu:wght@300..900&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  
-  <title>SkyNine Social Club</title>
+  <title>SkyNine Social Club · 紐約天九俱樂部</title>
 </head>
 
 <body>
-  <section id="nav" class="home"></section>
+  <div id="nav"></div>
 
-  <section class="hero">
-    <img class="tile right" src="assets/images/tile6.png">
-    <div class="hero-text">
-      <div class="t9">
-        <img src="assets/images/tin.png">
-        <img src="assets/images/gau.png">
-        <img src="assets/images/wui.png">
-        <img src="assets/images/jau6.png">
+  <div data-scroll-container>
+  <section class="hero" data-scroll-section>
+    <div class="hero-content">
+      <div class="hero-img">
+        <img class="scholar" src="assets/images/scholar.png">
+        <img class="military" src="assets/images/military.png">
       </div>
-    
-      <div class="wj">
-        <img src="assets/images/jau5.png">
-        <img src="assets/images/zi.png">
-        <img src="assets/images/mou.png">
-        <img src="assets/images/sau.png">
+      <div class="hero-text-wrap">
+        <h1 class="hero-text">Sky Nine Social Club</h1>
       </div>
     </div>
-    <img class="tile left" src="assets/images/tile3.png">
-  </section>
 
-  <section>
-    <div>
-      <h3>Tiengow is a four-player game played with Chinese dominoes that predates Mahjong. The game combines elements of strategy and chance; with a starting hand of eight tiles and the ability to play up to four tiles per round, it challenges players to faster-paced games with less room for error.</h3>
-      <p>Join us in playing this mostly forgotten Chinese national essence to celebrate our cultural identities and community. All players welcomed!</p>
-      <button>Learn the game</button><button>Follow us</button><button>Reach out</button>
+    <div id="tagline" aria-label="天九會友 有志無仇" data-scroll data-scroll-speed="2">
+      <span class="tagline-char">天</span>
+      <span class="tagline-char">九</span>
+      <span class="tagline-char">會</span>
+      <span class="tagline-char">友</span>
+      <span class="tagline-char">有</span>
+      <span class="tagline-char">志</span>
+      <span class="tagline-char">無</span>
+      <span class="tagline-char">仇</span>
     </div>
   </section>
 
-  <footer id="footer"></footer>
+  <section id="home" data-scroll-section>
+    <img class="tile" src="assets/images/tile3.svg" data-scroll data-scroll-speed="6">
+    <div class="text" data-scroll data-scroll-speed="2">
+      <h3>Most people have never heard of it.</h3>
+      <h3>Fewer still have played it.</h3>
+      <p></p>
+      <p>TienGow is a four-player domino game faster and less forgiving than mahjong, a Chinese national essence that has survived centuries yet remains largely lost outside the communities that kept it alive.</p>
+      <p>SkyNine Social Club gathers across New York City to play it, teach it, and bring it forward.</p>
+      <p>The table is open. Find your hand.</p>
+      <!-- <button><a href="../rules">Learn the Rules</a></button> -->
+    </div>
+  </section>
+
+  <section id="follow" data-scroll-section>
+    <div class="text" data-scroll data-scroll-speed="1">
+      <h3>Get word when we gather</h3>
+      <button id="scrollBtn"><a>Follow us</a></button>
+    </div>
+    <img class="tile" src="assets/images/tile6.svg" data-scroll data-scroll-speed="6">
+  </section>
+
+  <footer id="footer" data-scroll-section></footer>
+  </div>
 
 <script src="assets/styles/templates.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+<script>
+  // ── Locomotive Scroll ──
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    multiplier: 1,
+    smartphone: { smooth: true },
+    tablet: { smooth: true }
+  });
+
+  setTimeout(() => {
+    scroll.update();
+    console.log('updated limit:', scroll.scroll.instance.limit);
+  }, 500);
+
+  // ── Tagline stagger ──
+  const chars = document.querySelectorAll('#tagline .tagline-char');
+
+  scroll.on('call', (value) => {
+    if (value === 'taglineIn') {
+      chars.forEach((char, i) => {
+        setTimeout(() => {
+          char.classList.add('in-view');
+        }, i * 80); // 80ms between each character
+      });
+    }
+  });
+
+  document.getElementById("scrollBtn").addEventListener("click", () => {
+    scroll.scrollTo("#footer");
+  });
+</script>
 
 </body>
 </html>

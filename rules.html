@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="assets/styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Damion&family=Phudu:wght@300..900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>The Rules • Sky Nine Social Club</title>
+</head>
+
+<body>
+  <section id="nav" class="learn"></section>
+
+  <section class="content">
+    <div class="pattern" style="--color: var(--turq)">
+    <div class="tiles">
+      <h2>The Tiles</h2>
+
+      <div>
+        <p>There are 2 suits in the game of TienGow: Scholar and Military. They are ranked highest to lowest from left to right.</p>
+        <p>The design of these tiles are based on different dice combinations.</p>
+      </div>
+
+      <h3>Legal Hands</h3>
+      <p>To beat another tile, the tile must be of the same suit, and in not an equal but a higher ranking.</p>
+
+      <div class="hands">
+        <div class="single">
+          <h3>Single Tiles</h3>
+          <p>Each tile can be played individually.</p>
+        </div>
+
+        <div class="pair">
+          <h3>Matching Pairs</h3>
+          <p>The exact same tile can be played together as a pair.</p>
+        </div>
+
+        <div class="mixed">
+          <h3>Mixed Sets</h3>
+          <!-- <ul>A set of two, three or four tiles can be played, in any combintion of:
+            <li>Heavens and Nines</li>
+            <li>Earths and Eights</li>
+            <li>Man and Sevens</li>
+            <li>Harmony and Fives</li>
+          </ul> -->
+          <!-- <p>To beat a set, the hand must be of the exact same combination (matching number of tiles from each suit).<br>For example — if a set of 2 Humans and 1 Seven is played, a set of 2 Earths and 1 Eight, or a set of 2 Heavens and 1 Nine can be played.
+          <br>Player immediately wins 4 points with a quartet.</p> -->
+          <p>Any combinations of Scholar and its Military counterpart: Heaven/Nine, Earth/Eight, Man/Seven, Harmony/Five.</p>
+        </div>
+
+        <div class="supreme">
+          <h3>Supreme</h3>
+          <p>One of a kind. Unbeatable if led, but a discard if not.</p>
+        </div>
+      </div>
+
+      <div class="tiles-details">
+        <div class="suits">
+          <div>
+            <h4>Scholar</h4>
+            <img src="assets/images/tiles/scholar.gif">
+          </div>
+          <div class="tiles-grp">
+            <h6>Big Four 四大</h6>
+            <div class="tiles-row">
+              <div class="tile heaven">
+                <img src="assets/images/tiles/heaven.png">
+                <img src="assets/images/tiles/heaven.png">
+                <p>天 Heaven 6+6</p>
+              </div>
+              <div class="tile earth">
+                <img src="assets/images/tiles/earth.png">
+                <img src="assets/images/tiles/earth.png">
+                <p>地 Earth 1+1</p>
+              </div>
+              <div class="tile human">
+                <img src="assets/images/tiles/man.png">
+                <img src="assets/images/tiles/man.png">
+                <p>人 Human 4+4</p>
+              </div>
+              <div class="tile harmony">
+                <img src="assets/images/tiles/harmony.png">
+                <img src="assets/images/tiles/harmony.png">
+                <p>和 Harmony 3+1</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tiles-grp">
+            <h6>Four Elements 四素</h6>
+            <div class="tiles-row">
+              <div class="tile plum">
+                <img src="assets/images/tiles/plum.png">
+                <img src="assets/images/tiles/plum.png">
+                <p>梅花 Plum Flower 5+5</p>
+              </div>
+              <div class="tile long">
+                <img src="assets/images/tiles/long.png">
+                <img src="assets/images/tiles/long.png">
+                <p>長三 Long Threes 3+3</p>
+              </div>
+              <div class="tile bench">
+                <img src="assets/images/tiles/bench.png">
+                <img src="assets/images/tiles/bench.png">
+                <p>板凳 Bench 2+2</p>
+              </div>
+              <div class="tile tiger">
+                <img src="assets/images/tiles/tiger.png">
+                <img src="assets/images/tiles/tiger.png">
+                <p>斧頭 Tiger's Head 5+6</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tiles-grp">
+            <h6>Misc Three 三雜</h6>
+            <div class="tiles-row">
+              <div class="tile ten">
+                <img src="assets/images/tiles/ten.png">
+                <img src="assets/images/tiles/ten.png">
+                <p>紅頭十 Red Head Ten 4+6</p>
+              </div>
+              <div class="tile longleg">
+                <img src="assets/images/tiles/longleg.png">
+                <img src="assets/images/tiles/longleg.png">
+                <p>高腳七 Long Leg Seven 1+6</p>
+              </div>
+              <div class="tile mallet">
+                <img src="assets/images/tiles/mallet.png">
+                <img src="assets/images/tiles/mallet.png">
+                <p>玲瓏六 Red Mallet Six 1+5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="suits">
+          <div>
+            <h4>Military</h4>
+            <img src="assets/images/tiles/military.gif">
+          </div>
+          <div class="tiles-grp">
+            <h6></h6>
+            <div class="tiles-row">
+              <div class="tile nine">
+                <img src="assets/images/tiles/nine1.png">
+                <img src="assets/images/tiles/nine2.png">
+                <p>九 Nine</p>
+              </div>
+              <div class="tile eight">
+                <img src="assets/images/tiles/eight1.png">
+                <img src="assets/images/tiles/eight2.png">
+                <p>八 Eight</p>
+              </div>
+              <div class="tile seven">
+                <img src="assets/images/tiles/seven1.png">
+                <img src="assets/images/tiles/seven2.png">
+                <p>七 Seven</p>
+              </div>
+              <div class="tile five">
+                <img src="assets/images/tiles/five1.png">
+                <img src="assets/images/tiles/five2.png">
+                <p>五 Five</p>
+              </div>
+            </div>
+          </div>
+          <div class="tiles-grp">
+            <h6>Supreme 至尊</h6>
+            <div class="tiles-row">
+              <div class="tile six">
+                <img src="assets/images/tiles/six.png">
+                <p>大頭六 Big Head Six</p>
+              </div>
+              <div class="tile three">
+                <img src="assets/images/tiles/three.png">
+                <p>三雞 Three Chickens</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>     
+      
+    </div>
+    </div>
+
+    <div class="pattern" style="--color: var(--gold)">
+    <div class="rules">
+      <h2>The Rules</h2>
+
+      <h3>The Goal</h3>
+      <p>Play the strongest hand and outscore your opponents in the final round.</p>
+
+      <h3>The Set</h3>
+      <ol>
+        <li>Highest dice roll deals first game.</li>
+        <li>Shuffle the tiles. Arrange them into 8 stacks of 4.</li>
+        <li>Before the dice fall, player opposite to dealer decides the pattern of how each player collects their 8 tiles,</li>
+        <li>Count the rolled number counter-clockwise. That player draws first.</li>
+      <h3>The Play</h3>
+        <li>Dealer leads the first round and sets the hand. Play moves counter-clockwise.</li>
+        <li>Beat what's on the table. If you can't — or choose not to — discard the same number of tiles face-down. Sacrifice what you deem unworthy. No one can see what you've given up.</li>
+        <li>Highest hand of the round wins the stacks, and leads the next.</li>
+        <li>In a single-tile final round, those without any stacks are disqualified and must discard their hand. No exceptions.</li>
+        <li>Winner of final round rises to dealer's seat. Table resets.</li>
+      </ol>
+
+      <h3>Scoring</h3>
+      <ul>
+        <li>Par is 4 stacks. Win more and you score the difference. Win fewer and you lose it. Win nothing, and you lose five points automatically.</li>
+        <li>Dealer plays for double — winnings and losses. Stay winner across consecutive games and the multiplier climbs by one each time. The longer you hold the table, the more you stand to gain. And lose.</li>
+        <li>Playing Supreme wins you 2 points from all players. Any Quartet, 4 points. Anyone who plays Supreme gets 2 instant points, Quartet 4 instant points. Paid immediately by every other player at the table.</li>
+        <li>If a Quartet, Supreme, or Three Chickens wins the final round, points are doubled. Immediate wins and dealer's multiplier are honored.</li>
+        <!-- <li>Attempts to win with Three Chickens in the final round, if hijacked by another player's Big Head Six, incurs total loss including those of uninvolved players. Count dealer's loss with multiplier.</li> -->
+        <li>Sweeping all 8 stacks doubles the game. Multipliers compound.</li>
+      </ul>
+    </div>
+    </div>
+
+    <div class="pattern" style="--color: var(--pink)">
+    <div class="resources">
+      <h2>Friends and Resources</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/taihang_tin9/" target="_blank">Tai Hang Tin 9 Club @ Hong Kong</a></li>
+        <li><a href="https://www.tin9club.com/" target="_blank">The Tin K9u Club @ Hong Kong</a></li>
+        <li><a href="https://www.geocities.ws/cplai/sky-nine.htm" target="_blank">Geocities page by CP Lai</a></li>
+        <li><a href="http://www.gamecabinet.com/rules/DominoTienGow.html" target="_blank">Game Cabinet – Tien Gow Rules</a></li>
+      </ul>
+    </div>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+
+<script src="assets/styles/templates.js"></script>
+<script>
+
+  const legalHands = document.querySelectorAll('.hands > div');
+  const tiles = document.querySelectorAll('.tile');
+
+  const groups = document.querySelectorAll('.tiles-grp');
+  const grpNames = document.querySelectorAll('.tiles-grp > h6');
+
+  groups.forEach(grp => {
+    const row = grp.querySelector('.tiles-row');
+    row.addEventListener('mouseenter', () => {
+      grpNames.forEach(h6 => {
+        h6.style.opacity = grp.contains(h6) ? 1 : 0.25;
+      });
+    });
+
+    row.addEventListener('mouseleave', () => {
+      grpNames.forEach(h6 => {
+        h6.style.opacity = 1;
+      });
+    });
+  });
+
+  const handRules = {
+    single: null,
+    pair: new Set(['six', 'three']),
+    mixed: new Set(['heaven', 'earth', 'human', 'harmony', 'nine', 'eight', 'seven', 'five']),
+    supreme: new Set(['six', 'three'])
+  };
+
+  const tileRules = {
+    heaven: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['heaven', 'nine']
+    },
+    nine: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['heaven', 'nine']
+    },
+    earth: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['earth', 'eight']
+    },
+    eight: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['earth', 'eight']
+    },
+    human: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['human', 'seven']
+    },
+    seven: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['human', 'seven']
+    },
+    harmony: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['harmony', 'five']
+    },
+    five: {
+      relatedHands: ['single', 'pair', 'mixed'],
+      relatedTiles: ['harmony', 'five']
+    },
+    six: {
+      relatedHands: ['single', 'supreme'],
+      relatedTiles: ['six', 'three']
+    },
+    three: {
+      relatedHands: ['single', 'supreme'],
+      relatedTiles: ['six', 'three']
+    }
+  };
+
+  const showLegalHands = (elements, callback) => {
+    let notClicked = true;
+
+    elements.forEach((el) => {
+      el.addEventListener('mouseenter', () => {
+        callback(el)
+        notClicked = true;
+      });
+      el.addEventListener('mouseleave', () => notClicked && resetStyles(el));
+      el.addEventListener('click', () => {
+        callback(el);
+        notClicked = false;
+      });
+    });
+  };
+
+  showLegalHands(legalHands, (hand) => filterByHand(hand, hand.className));
+  showLegalHands(tiles, (tile) => filterByTile(tile.classList[1]));
+
+  // const validHand = {
+  //   opacity: 1,
+  // };
+
+  // const invalidHand = {
+  //   opacity: 0.25,
+  // }
+
+  const validHand = (hand) => {
+    hand.style.opacity = 1;
+    hand.classList.add('legal');
+  };
+
+  const invalidHand = (hand) => {
+    hand.style.opacity = 0.25;
+  };
+
+
+  function filterByHand(el, handType) {
+    legalHands.forEach((hand) => {
+    //   const styles = hand === el ? validHand : invalidHand;
+    //   Object.assign(hand.style, styles);
+      hand === el ? validHand(hand) : invalidHand(hand);
+    });
+
+    const classes = handRules[handType];
+    if (!classes) {
+      tiles.forEach((tile) => {
+        tile.querySelector('p').style.color = 'var(--red)';
+      });
+      return;
+    }
+
+    groups.forEach((grp) => {
+      const h6 = grp.querySelector('h6');
+
+      const tiles = Array.from(grp.querySelectorAll('.tile'));
+      const hasTileName = tiles.some(tile =>
+        Array.from(tile.classList).some(cls => classes.has(cls))
+      );
+      h6.style.opacity = (handType !== 'pair') ? (hasTileName ? 1 : 0.25) : (hasTileName ? 0.25 : 1);
+    });
+
+    tiles.forEach((tile) => {
+      const hasTileName = Array.from(tile.classList).some(cls => classes.has(cls));
+
+      const opacity = (handType === 'pair') ? (hasTileName ? 0.25 : 1) : (hasTileName ? 1 : 0.25);
+      const color = (handType === 'pair') ? (hasTileName ? 'var(--white)' : 'var(--red)') : (hasTileName ? 'var(--red)' : 'var(--white)');
+
+      tile.style.opacity = opacity;
+      tile.querySelector('p').style.color = color;
+    });
+  }
+
+  function filterByTile(tileClass) {
+    const rules = tileRules[tileClass] || {
+      relatedHands: ['single', 'pair'],
+      relatedTiles: [tileClass]
+    };
+
+    legalHands.forEach((hand) => {
+      // const styles = rules.relatedHands.includes(hand.className) ? validHand : invalidHand;
+      // Object.assign(hand.style, styles);
+      rules.relatedHands.includes(hand.className) ? validHand(hand) : invalidHand(hand);
+    });
+
+    tiles.forEach((tile) => {
+      const thisTile = rules.relatedTiles.includes(tile.classList[1]);
+      tile.style.opacity = thisTile ? 1 : 0.25;
+      tile.querySelector('p').style.color = thisTile ? 'var(--red)' : 'var(--white)';
+    });
+  };
+
+  function resetStyles() {
+    legalHands.forEach((hand) => {
+      hand.style.opacity = 1;
+      hand.classList.remove('legal');
+    });
+
+    tiles.forEach((tile) => {
+      tile.style.opacity = 1;
+      tile.querySelector('p').style.color = 'inherit';
+    });
+
+    grpNames.forEach((h6) => {
+      h6.style.opacity = 1;
+    })
+  }
+
+
+</script>
+
+</body>
+</html>
