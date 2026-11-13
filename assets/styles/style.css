@@ -328,7 +328,6 @@ img.tile {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 64px;
-	padding-bottom: 20vh;
 }
 
 @media (max-width: 768px) {
@@ -359,6 +358,38 @@ img.tile {
 	#follow img.tile {
 		align-self: flex-end;
 	}
+}
+
+.scatter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+	padding-bottom: 20vh;
+}
+
+.scatter img {
+  width: 28vw;
+  height: auto;
+  margin: 0 0 0 -1vw;             /* the last number is how much each photo overlaps the one before it */
+  transition: scale .4s;
+  border-radius: 4px;
+}
+.scatter img:hover { scale: 1.05; z-index: 1; }
+
+.scatter img:nth-child(1) { margin-left: 0;                    rotate: -2deg; }
+.scatter img:nth-child(2) { margin-top: 3vw;                 rotate: 1deg;  }
+.scatter img:nth-child(3) {                                    rotate: -4deg; }
+.scatter img:nth-child(4) { margin-top: 2.5vw;                   rotate: 0deg;  }
+.scatter img:nth-child(5) {                                    rotate: -1deg; }
+
+/* Fade in as each photo scrolls into view (Locomotive adds these two classes) */
+.has-scroll-init .scatter img:not(.is-inview) { opacity: 0; }
+.has-scroll-init .scatter img.is-inview { transition: opacity .8s, scale .4s; }
+
+@media (max-width: 720px) {
+  .scatter { flex-wrap: wrap; }
+  .scatter img { width: 50vw; }
+  .scatter img:nth-child(n+4) { margin-top: -3vw; }
 }
 
 
